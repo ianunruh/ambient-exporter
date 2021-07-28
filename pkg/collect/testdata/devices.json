@@ -1,0 +1,49 @@
+[
+    {
+      "macAddress": "34:14:B5:A1:B2:C3",
+      "lastData": {
+        "dateutc": 1627503540000,
+        "tempinf": 74.3,
+        "humidityin": 48,
+        "battout": 1,
+        "temp1f": 75.7,
+        "humidity1": 46,
+        "batt1": 1,
+        "temp2f": 83.4,
+        "humidity2": 32,
+        "batt2": 1,
+        "temp3f": 94.4,
+        "humidity3": 25,
+        "batt3": 1,
+        "feelsLike1": 75.1,
+        "dewPoint1": 53.4,
+        "feelsLike2": 81.7,
+        "dewPoint2": 50.4,
+        "feelsLike3": 92,
+        "dewPoint3": 53.1,
+        "feelsLikein": 73.7,
+        "dewPointin": 53.3,
+        "tz": "America/Denver",
+        "date": "2021-07-28T20:19:00.000Z"
+      },
+      "info": {
+        "name": "Home Station",
+        "coords": {
+          "coords": {
+            "lon": 64.42936,
+            "lat": -38.96003
+          },
+          "address": "123 Main Street, Anytown, CO",
+          "location": "Anytown",
+          "elevation": 1767.17578125,
+          "geo": {
+            "type": "Point",
+            "coordinates": [
+              64.42936,
+              -38.96003
+            ]
+          }
+        }
+      }
+    }
+  ]

@@ -1,0 +1,11 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: ambient-exporter
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: ambient-exporter
+  endpoints:
+  - interval: 10s
+    port: metrics

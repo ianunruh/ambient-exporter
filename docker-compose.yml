@@ -1,0 +1,9 @@
+version: "3.1"
+services:
+  exporter:
+    build: .
+    environment:
+    - AMBIENT_API_KEY
+    - AMBIENT_APP_KEY
+    ports:
+    - 9090:9090
