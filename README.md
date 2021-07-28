@@ -2,6 +2,17 @@
 
 Prometheus exporter that collects device data from the Ambient Weather API.
 
+![Build Docker image](https://github.com/ianunruh/ambient-exporter/actions/workflows/docker-build.yml/badge.svg)
+
+Tested with the Ambient Weather WS-8482.
+
+[Example metrics](docs/example-metrics.txt)
+
+## Features
+
+* Supports multiple base stations and multiple sensors per station
+* Lightweight Docker image (around 15MB)
+
 ## Usage
 
 Start by getting an API key and application key from [Ambient Weather](https://ambientweather.net/account).

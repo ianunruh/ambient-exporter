@@ -1,0 +1,35 @@
+# HELP ambient_api_request_latency_ms Request latency for the devices API in milliseconds
+# TYPE ambient_api_request_latency_ms gauge
+ambient_api_request_latency_ms 130
+
+# HELP ambient_device_data_age_seconds Age of the last data for a device in seconds
+# TYPE ambient_device_data_age_seconds gauge
+ambient_device_data_age_seconds{device="AA:BB:CC:DD:EE:FF"} 13
+
+# HELP ambient_device_dewpoint_f Dew point for a particular sensor in Fahrenheit
+# TYPE ambient_device_dewpoint_f gauge
+ambient_device_dewpoint_f{device="AA:BB:CC:DD:EE:FF",sensor="1"} 53.7
+ambient_device_dewpoint_f{device="AA:BB:CC:DD:EE:FF",sensor="2"} 47.8
+ambient_device_dewpoint_f{device="AA:BB:CC:DD:EE:FF",sensor="3"} 51.6
+ambient_device_dewpoint_f{device="AA:BB:CC:DD:EE:FF",sensor="in"} 54
+
+# HELP ambient_device_feelslike_f Feels like temperature for a particular sensor in Fahrenheit
+# TYPE ambient_device_feelslike_f gauge
+ambient_device_feelslike_f{device="AA:BB:CC:DD:EE:FF",sensor="1"} 76.8
+ambient_device_feelslike_f{device="AA:BB:CC:DD:EE:FF",sensor="2"} 82.2
+ambient_device_feelslike_f{device="AA:BB:CC:DD:EE:FF",sensor="3"} 94.1
+ambient_device_feelslike_f{device="AA:BB:CC:DD:EE:FF",sensor="in"} 76.5
+
+# HELP ambient_device_humidity Humidity percentage for a particular sensor
+# TYPE ambient_device_humidity gauge
+ambient_device_humidity{device="AA:BB:CC:DD:EE:FF",sensor="1"} 44
+ambient_device_humidity{device="AA:BB:CC:DD:EE:FF",sensor="2"} 28
+ambient_device_humidity{device="AA:BB:CC:DD:EE:FF",sensor="3"} 22
+ambient_device_humidity{device="AA:BB:CC:DD:EE:FF",sensor="in"} 45
+
+# HELP ambient_device_temp_f Temperature for a particular sensor in Fahrenheit
+# TYPE ambient_device_temp_f gauge
+ambient_device_temp_f{device="AA:BB:CC:DD:EE:FF",sensor="1"} 77.3
+ambient_device_temp_f{device="AA:BB:CC:DD:EE:FF",sensor="2"} 84.5
+ambient_device_temp_f{device="AA:BB:CC:DD:EE:FF",sensor="3"} 96.8
+ambient_device_temp_f{device="AA:BB:CC:DD:EE:FF",sensor="in"} 77
