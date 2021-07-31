@@ -7,5 +7,5 @@ spec:
     matchLabels:
       app.kubernetes.io/name: ambient-exporter
   endpoints:
-  - interval: 10s
+  - interval: 60s
     port: metrics
