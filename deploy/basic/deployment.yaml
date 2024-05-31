@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: ghcr.io/ianunruh/ambient-exporter:v1.1.0
+        image: ghcr.io/ianunruh/ambient-exporter:v1.1.1
         envFrom:
         - secretRef:
             name: ambient-exporter
@@ -29,6 +29,7 @@ spec:
             add:
             - NET_BIND_SERVICE
           readOnlyRootFilesystem: true
-          runAsUser: 1000
-          runAsGroup: 1000
-          fsGroup: 1000
+      securityContext:
+        runAsUser: 1000
+        runAsGroup: 1000
+        fsGroup: 1000

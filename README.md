@@ -38,7 +38,7 @@ kubectl -n monitoring create secret generic ambient-exporter \
     --from-literal=AMBIENT_APP_KEY=${AMBIENT_APP_KEY}
 
 # Using tagged manifests
-kubectl kustomize "https://github.com/ianunruh/ambient-exporter.git/deploy/basic?ref=v1.1.0" | \
+kubectl kustomize "https://github.com/ianunruh/ambient-exporter.git/deploy/basic?ref=v1.1.1" | \
     kubectl apply -n monitoring -f-
 
 # Using local manifests
