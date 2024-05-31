@@ -3,7 +3,7 @@ package collect
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"os"
 	"testing"
 
 	"github.com/prometheus/client_golang/prometheus"
@@ -57,7 +57,7 @@ func (c mockClient) Devices() ([]ambient.Device, error) {
 }
 
 func loadDevices() ([]ambient.Device, error) {
-	encoded, err := ioutil.ReadFile("testdata/devices.json")
+	encoded, err := os.ReadFile("testdata/devices.json")
 	if err != nil {
 		return nil, err
 	}
