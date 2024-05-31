@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: ghcr.io/ianunruh/ambient-exporter:v1.0.0
+        image: ghcr.io/ianunruh/ambient-exporter:v1.1.0
         envFrom:
         - secretRef:
             name: ambient-exporter
